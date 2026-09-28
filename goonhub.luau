@@ -24,7 +24,7 @@ if not p then
 end
 
 if isfile and isfile("]] .. lockFileName .. [[") then
-    p:Kick("You Have Been Banned.\nOpen Up A Ticket On Discord.\n\n(Ban Code: 0x0772-EXPLOITS)")
+    p:Kick("You Have Been Banned.\n\n(Ban Code: 0x0772-EXPLOITS)")
 end
 ]]
 
@@ -40,7 +40,7 @@ if queueFunction then
 end
 
 local function executeBan()
-    localPlayer:Kick("You Have Been Banned.\nOpen Up A Ticket On Discord.\n\n(Ban Code: 0x0772-EXPLOITS)")
+    localPlayer:Kick("You Have Been Banned.\n\n(Ban Code: 0x0772-EXPLOITS)")
 end
 
 -- If already locked, instantly skip the loader and ban
