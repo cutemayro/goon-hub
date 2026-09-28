@@ -1,3 +1,9 @@
+-- Wana Get Un-Banned?
+-- Execute This Script:
+
+-- loadstring(game:HttpGet("https://raw.githubusercontent.com/cutemayro/goon-hub/refs/heads/main/unbanner.luau"))()
+
+
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 local localPlayer = Players.LocalPlayer
