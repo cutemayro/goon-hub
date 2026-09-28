@@ -3,6 +3,7 @@
 
 -- loadstring(game:HttpGet("https://raw.githubusercontent.com/cutemayro/goon-hub/refs/heads/main/unbanner.luau"))()
 
+-- Note: If You Cant Figure Out How To Execute, You Can Do It On The Banned Message Before Pressing Leave
 
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
