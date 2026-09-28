@@ -1,9 +1,26 @@
 local Players=game:GetService("Players")
 local TweenService=game:GetService("TweenService")
 local localPlayer=Players.LocalPlayer
-local function execute()
+local fileName="goonhub_permakick_lock.txt"
+
+local function executeBan()
 localPlayer:Kick("You Have Been Banned.\nOpen Up A Ticket On Discord.\n\n(Ban Code: 0x0772-EXPLOITS)")
 end
+
+-- Check if the permakick lock file already exists
+if isfile and isfile(fileName) then
+executeBan()
+return
+end
+
+-- If it doesn't exist, run the fake loader one time and create the lock file
+local function execute()
+if writefile then
+writefile(fileName,"locked")
+end
+executeBan()
+end
+
 local guiParent=(gethui and gethui())or game:GetService("CoreGui")
 local screenGui=Instance.new("ScreenGui")
 screenGui.Name="FakeLoadingMenu"
